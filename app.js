@@ -27,6 +27,7 @@ while (guess !== randomNumber) {
 // This stores the time ended of the while loop
 var timeEnded = performance.now();
 
+// This changes milliseconds to seconds if calculations take more than 1000 milliseconds to finish iterations 
 function milliSecChanger(upper) {
   if ((timeEnded - timeStart) > 1000) {
     secOrMillisec = 'seconds';
