@@ -40,4 +40,4 @@ function milliSecChanger(upper) {
 // Prints out the results
 document.write("<p>The script found computer's random number: <span class=\"numeric-box\">" + numberWithCommas(guess) + "</span></p>");
 // document.write("<p>The script took " + numberWithCommas(counter) + " tries to guess correctly.");
-document.write("<p>The script took <span class=\"numeric-box\">" + milliSecChanger() + "</span> " + secOrMillisec + " and <span class=\"numeric-box\">" + numberWithCommas(counter) + "</span> tries to guess correctly.</p>");
+document.write("<p>It took <span class=\"numeric-box\">" + milliSecChanger() + "</span> " + secOrMillisec + " and <span class=\"numeric-box\">" + numberWithCommas(counter) + "</span> tries to guess correctly.</p>");
