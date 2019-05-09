@@ -17,14 +17,14 @@ function getRandomNumber(upper) {
 // Prints out the result of random number generator
 document.write("This is computer's random number: <span class=\"numeric-box\">" + numberWithCommas(randomNumber) + "</span></p>");
 
-// This stores the time start of the while loop
+// This stores the time start of the guesser loop
 var timeStart = performance.now();
 // This calls the getRandomNumber function to generate random numbers until it finds a match with the original random number
 while (guess !== randomNumber) {
   guess = getRandomNumber(upper);
   counter++;
 }
-// This stores the time ended of the while loop
+// This stores the time ended of the guesser loop
 var timeEnded = performance.now();
 
 // This changes milliseconds to seconds if calculations take more than 1000 milliseconds to finish iterations 
