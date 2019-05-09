@@ -12,7 +12,14 @@ body {
   line-height: 1.5em;
   color: #8d9aa5;
 }
-
+.numeric-box {
+  padding: 3px 5px;
+  background: #111;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: yellowgreen;
+  font-size: .9rem;
+}
 a {
   color: #3f8aBf;
   text-decoration: none;
