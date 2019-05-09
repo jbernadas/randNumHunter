@@ -1,4 +1,4 @@
-var upper = 1000000000;
+var upper = 1000000;
 var randomNumber = getRandomNumber(upper);
 var guess;
 var counter = 0;
@@ -27,13 +27,13 @@ while (guess !== randomNumber) {
 // This stores the time ended of the guesser loop
 var timeEnded = performance.now();
 
-// If guesser loop takes more than 1000 milliseconds change the output to seconds instead of milliseconds 
+// If guesser loop takes more than 1000 milliseconds, change the output to seconds 
 function milliSecChanger(upper) {
   if ((timeEnded - timeStart) > 1000) {
     secOrMillisec = 'seconds';
-    return ((timeEnded - timeStart)/1000).toFixed(2);
+    return ((timeEnded - timeStart)/1000).toFixed(4);
   } else { 
-    return timeEnded - timeStart
+    return (timeEnded - timeStart).toFixed(4);
   }
 }
 
